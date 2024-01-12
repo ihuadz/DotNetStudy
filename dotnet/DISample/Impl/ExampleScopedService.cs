@@ -1,4 +1,4 @@
-﻿namespace ConsoleAppDemo.DISamples.Impl
+﻿namespace DISample.Impl
 {
     internal sealed class ExampleScopedService : IExampleScopedService
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace ConsoleAppDemo.DISamples
+namespace DISample
 {
     internal interface IExampleSingletonService : IReportServiceLifetime
     {
