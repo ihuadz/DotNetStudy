@@ -46,7 +46,7 @@
             foreach (var temp in temps)
             {
                 Console.WriteLine(temp);
-                System.Threading.Thread.Sleep(2500);
+                System.Threading.Thread.Sleep(3000);
                 if (temp.HasValue)
                 {
                     if (start || (Math.Abs(temp.Value - previous.Value) >= 0.1m))

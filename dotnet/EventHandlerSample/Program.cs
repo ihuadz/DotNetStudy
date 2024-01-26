@@ -17,12 +17,15 @@ namespace EventHandlerSample
             //}
 
             //温度监控
-            TemperatureMonitor tm = new TemperatureMonitor();
-            //tm.GetTemperature();
+            TemperatureReporter reporter = new TemperatureReporter();
+            TemperatureReporter reporter2 = new TemperatureReporter();
+            TemperatureReporter reporter3 = new TemperatureReporter();
 
-            TemperatureReporter tr = new TemperatureReporter();
-            tr.Subscribe(tm);
-            tr.OnNext(new Temperature(10, DateTime.Now));
+            TemperatureMonitor provider = new TemperatureMonitor();
+            provider.Subscribe(reporter);
+            provider.Subscribe(reporter2);
+            provider.Subscribe(reporter3);
+
         }
 
         static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)

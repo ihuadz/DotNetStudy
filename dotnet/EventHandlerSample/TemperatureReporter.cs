@@ -2,6 +2,11 @@
 {
     public class TemperatureReporter : IObserver<Temperature>
     {
+        private string _name;
+        public TemperatureReporter(string name)
+        {
+            _name = name;
+        }
         private IDisposable unsubscriber;
         private bool first = true;
         private Temperature last;
@@ -28,6 +33,7 @@
 
         public virtual void OnNext(Temperature value)
         {
+            Console.WriteLine($"{_name} reporte");
             Console.WriteLine("The temperature is {0}°C at {1:g}", value.Degrees, value.Date);
             if (first)
             {
