@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>E:\huadez\code\dotnet_study\dotnet\RazorPageDemo\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-01-29T08:47:30.0625528Z;True|2024-01-29T16:45:53.7376223+08:00;True|2024-01-29T16:38:22.3002633+08:00;True|2024-01-29T16:32:27.5238971+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
