@@ -20,6 +20,7 @@ public class QuickSort
 
             // 对基准元素右边的子数组进行排序
             Sort(array, pivotIndex + 1, high);
+
         }
     }
 
@@ -80,6 +81,23 @@ public class QuickSort
                 {
                     Swap(array, j, j + 1);
                 }
+            }
+        }
+    }
+
+    /// <summary>
+    /// 水仙花算法
+    /// </summary>
+    public static void NarcissisticNumber()
+    {
+        for (int i = 100; i < 1000; i++)
+        {
+            int a = i / 100;
+            int b = i / 10 % 10;
+            int c = i % 10;
+            if (i == a * a * a + b * b * b + c * c * c)
+            {
+                Console.WriteLine(i);
             }
         }
     }
