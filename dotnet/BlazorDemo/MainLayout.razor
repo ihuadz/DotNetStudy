@@ -1,0 +1,33 @@
+﻿@inherits LayoutComponentBase
+
+<MApp>
+
+    <MNavigationDrawer 
+        App
+        Color="grey darken-4">
+        <MListItem>
+            <MListItemContent>
+                <MListItemTitle class="text-h6">
+                    Application
+                </MListItemTitle>
+                <MListItemSubtitle>
+                    subtext
+                </MListItemSubtitle>
+            </MListItemContent>
+        </MListItem>
+    </MNavigationDrawer>
+
+    <!-- 根据应用组件来调整你的内容 -->
+    <MMain>
+        <!-- 给应用提供合适的间距 -->
+        <MContainer>@Body</MContainer>
+    </MMain>
+
+    <MFooter App>
+        <!-- -->
+    </MFooter>
+</MApp>
+
+@code {
+    bool? drawer;
+}
